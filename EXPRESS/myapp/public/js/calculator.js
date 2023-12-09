@@ -40,7 +40,9 @@ async function calculateResult() {
         break;
       case "-":
         // result = num1 - num2;
-        let difference = await fetch(`/calculator/subtract?num1=${num1}&num2=${num2}`)
+        let difference = await fetch(
+          `/calculator/subtract?num1=${num1}&num2=${num2}`
+        )
           .then((response) => response.json())
           .then((data) => {
             return data.result;
@@ -50,7 +52,9 @@ async function calculateResult() {
         break;
       case "*":
         // result = num1 * num2;
-        let product = await fetch(`/calculator/multiply?num1=${num1}&num2=${num2}`)
+        let product = await fetch(
+          `/calculator/multiply?num1=${num1}&num2=${num2}`
+        )
           .then((response) => response.json())
           .then((data) => {
             return data.result;
@@ -60,7 +64,9 @@ async function calculateResult() {
         break;
       case "/":
         // result = num1 / num2;
-        let quotient = await fetch(`/calculator/divide?num1=${num1}&num2=${num2}`)
+        let quotient = await fetch(
+          `/calculator/divide?num1=${num1}&num2=${num2}`
+        )
           .then((response) => response.json())
           .then((data) => {
             return data.result;
